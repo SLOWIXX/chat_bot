@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Premium</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="header-content">
+                <div class="bot-avatar">
+                    <i class="ph-fill ph-robot"></i>
+                    <div class="online-indicator"></div>
+                </div>
+                <div class="header-text">
+                    <h1>Aura AI</h1>
+                    <p>En ligne</p>
+                </div>
+            </div>
+            <button class="header-action" title="Options">
+                <i class="ph ph-dots-three-vertical"></i>
+            </button>
+        </header>
+
+        <main class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                Wsh la zone ca dit quoi ?
+            </div>
+        </main>
+
+        <footer class="chat-input-area">
+            <form id="chat-form">
+                <div class="input-wrapper">
+                    <input type="text" id="user-input" placeholder="Écrivez un message..." required autocomplete="off">
+                    <button type="submit" id="send-btn" class="send-btn">
+                        <i class="ph-fill ph-paper-plane-right"></i>
+                    </button>
+                </div>
+            </form>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
